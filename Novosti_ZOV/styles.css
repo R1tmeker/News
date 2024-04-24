@@ -1,0 +1,137 @@
+/* CSS для оптимизированного размещения головы сайта */
+
+
+.navbar-link {
+    position: fixed;
+    right: px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  
+}
+
+.container {
+    margin-top: 100px; /* Учитывайте высоту навигационной панели */
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+    position: absolute;
+    right: 0;
+}
+
+        
+        .container {
+            margin-top: 100px; /* Учитывайте высоту навигационной панели */
+        }
+        
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .navbar-toggler {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .navbar-nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-nav {
+                position: static;
+                transform: none;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/* CSS для контейнера с новостями */
+.news-container {
+    margin-bottom: 60px; /* Отступ снизу для предотвращения перекрытия с футером */
+}
+
+
+/* Медиа-запросы для различных разрешений экрана */
+
+/* Для маленьких устройств (телефоны) */
+@media (max-width: 575.98px) {
+    .navbar {
+        padding: 20px 0; /* Увеличиваем верхний и нижний внутренний отступ */
+    }
+
+    .navbar-toggler {
+        right: 10px; /* Уменьшаем отступ справа */
+    }
+
+    .card {
+        margin-bottom: 15px; /* Увеличиваем отступ между карточками новостей */
+    }
+}
+
+/* Для средних устройств (планшеты) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .navbar {
+        padding: 25px 0; /* Увеличиваем верхний и нижний внутренний отступ */
+    }
+
+    .navbar-toggler {
+        right: 15px; /* Увеличиваем отступ справа */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Увеличиваем отступ между карточками новостей */
+    }
+}https://chat.openai.com/c/a1baacb0-7793-473d-a9d0-f3f8125af93b
+
+/* Для больших устройств (настольные компьютеры и ноутбуки) */
+@media (min-width: 992px) {
+    .navbar {
+        padding: 30px 0; /* Увеличиваем верхний и нижний внутренний отступ */
+    }
+
+    .navbar-toggler {
+        right: 20px; /* Увеличиваем отступ справа */
+    }
+
+    .card {
+        margin-bottom: 25px; /* Увеличиваем отступ между карточками новостей */
+    }
+}
+
+ /* Анимация для переливания цветов флага России */

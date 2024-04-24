@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Za наши ноVости</title>
+
+    <!-- Подключаем Bootstrap CSS  и др CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="futer.css">
+    <link rel="stylesheet" href="mp4.css">
+    <!-- /Подключаем Bootstrap CSS  и др CSS-->
+</head>
+<body>
+    <!-- Голова сайта и навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light">
+        <a class="navbar-brand" href="home.html" id="siteTitle">Za наши ноVости</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Главная <span class="sr-only">(current)</span></a>
+                </li>
+        </div>
+    </nav>
+    <!-- /Голова сайта и навигационная панель -->
+
+    <div class="container mt-4 mb-4"> <!-- Добавляем отступы -->
+        <h1 class="mt-5 mb-4">Последние новости</h1>
+      
+        <!-- Блоки новостей -->
+        <div class="row">
+            <!-- Добавляем слайдер с видео -->
+            <div id="carouselExampleControls" class="carousel slide col-md-12" data-interval="false"> <!-- Убираем data-ride="carousel" и добавляем data-interval="false" -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="video-container" onclick="toggleVideo(this)">
+                            <video controls preload="metadata">
+                                <source src="video/-2242525817846803170.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-container" onclick="toggleVideo(this)">
+                            <video controls preload="metadata">
+                                <source src="video/4205454458223698808.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Добавьте дополнительные видео, по необходимости -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                </a>
+            </div>
+        <!-- /Добавляем слайдер с видео -->
+
+        <!-- Продолжаем с остальными блоками новостей -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="photo/photo1.jpg" class="card-img-top" alt="Новость 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Более двух тысяч неразорвавшихся боеприпасов обезвредили саперы группировки войск «Центр» в Авдеевке</h5>
+                        <p class="card-text">Специалисты инженерных войск выполняют задачи по расчистке местности и объектов гражданской инфраструктуры от взрывоопасных предметов, основу которых составляют противопехотные, противотанковые мины и мины иностранного производства.</p>
+                        <a href="https://t.me/c/1665517649/16149" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="photo/photo2.jpg" class="card-img-top" alt="Новость 2">
+                    <div class="card-body">
+                        <h5 class="card-title">ВС РФ владеют инициативой по всей линии боевого соприкосновения, продолжают выдавливать противника с занимаемых рубежей, заявил Шойгу</h5>
+                        <p class="card-text">Российские бойцы освободили Первомайское, Богдановку и Новомихайловку в ДНР, расширяют зону контроля в Бердычах и Георгиевке, отметил глава Минобороны России. 
+
+                            Также он добавил, что потери ВСУ с начала спецоперации составили уже почти полмиллиона военных..</p>
+                        <a href="https://t.me/c/1665517649/16266" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="photo/photo3.jpg" class="card-img-top" alt="Новость 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Западная трофейная бронетехника Bradley, Marder и БТР М113, захваченная в зоне специальной военной операции (СВО) доставлена в Москву на Поклонную гору.</h5>
+                        <p class="card-text">Ранее в официальном канале парка «Патриот» сообщалось, что в музее Победы на Поклонной горе будет показана трофейная военная техника, включающая в себя образцы техники и вооружений НАТО и ВСУ из зоны СВО. «Выставка будет действовать на Поклонной горе весь май»</p>
+                        <a href="https://t.me/c/1665517649/16268" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Блоки новостей -->
+
+    <!-- Подключаем Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- /Подключаем Bootstrap JS -->
+
+    <script src="hide_Za-наши.js"></script>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Za наши ноVости. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
